@@ -1,0 +1,46 @@
+.sv {
+    /* text-align: center; */
+    color:rgb(161, 53, 14)
+}
+.sd {
+    /* text-align: center; */
+    color:rgb(105, 56, 202)
+}
+
+.sm {
+    color: rgb(72, 121, 122);
+}
+
+.sst{
+    color: darkgoldenrod;
+}
+
+.ssp{
+    color: rgb(82, 114, 68);
+}
+
+.sz{
+    color: navy;
+}
+
+.action {
+    font-style: italic;
+}
+
+.text {
+    color:rgb(0, 0, 0)
+}
+
+.scene {
+    /* text-align: center; */
+    margin-left: 30% ;
+}
+
+body {
+    background-color: rgb(201, 201, 201);
+}
+
+h2 {
+    /* text-align: center; */
+    margin-left: 30%;
+}

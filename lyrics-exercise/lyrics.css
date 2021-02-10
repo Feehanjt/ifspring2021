@@ -1,0 +1,18 @@
+#lyrics {
+    margin-right: 35%;
+    margin-top: 5%;
+    float:right;
+    font-size: 25px;
+    color: rgb(55, 26, 82);
+}
+
+#title {
+    float: left;
+    position:fixed;
+    color: rgb(55, 26, 82);
+
+}
+
+body {
+    background-color: rgb(51, 144, 160);
+}

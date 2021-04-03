@@ -1,0 +1,107 @@
+#first_section {
+    background-image: url(../images/Zugpsitze_mountain.jpg);
+}
+
+#page-intro {
+    text-align: center;
+    font-size: 5em;
+    padding-top: 2em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
+#intro-subheading {
+    text-align: center;
+    font-size: 2em;
+    padding-bottom: 4em;
+    margin-bottom: 0em;
+}
+
+#second_section {
+    background-color:cadetblue;
+    font-size: 20px;
+}
+
+#second_section_title {
+    padding-top: 2em;
+}
+
+.section_title{
+    margin-top: 0em;
+    text-align: center;
+    padding-top: 1em;
+    font-size: 40px;
+}
+
+#second_section_picture {
+    width: 400px;
+    height:300px;
+    float: right;
+}
+#second_section_content{
+    width:35%;
+    margin: 0 auto
+}
+
+.no_margin{
+    margin: 0em;
+}
+#third-section {
+    background-color: rgb(250, 179, 0);
+}
+
+.grid_images{
+    float:left;
+    width: 200px;
+    height:150px;
+    padding-right: 1em;
+}
+
+.photo_title{
+    font-weight: bold;
+}
+
+/* .photo_description{
+     float:right;
+} */
+
+#photo_grid{
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.list_items{
+    display: inline-block;
+    padding-bottom: 1em;
+    width: 350px ;
+    text-align: left;
+}
+
+#list_container{
+    text-align: center;
+}
+
+#forth_section{
+    background-color: darkolivegreen;
+}
+
+#last_section_text{
+    text-align: center;
+    font-size: 24px;
+    width: 20%;
+    margin: 0 auto;
+    height: auto;
+    padding-bottom: 75px
+}
+
+#copyright {
+    margin-top: 0em;
+    background-color: rgb(75, 74, 74);
+    padding-bottom: 120px;
+    color: white;
+    text-align: center;
+}
+
+
+

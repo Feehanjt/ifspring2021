@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Croissant Sources</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="./microsite_css.css">
+    </head>
+    <body>
+        <section id = variants_section_1 class = page_banner>
+            <div class = menu_bar_container id = 'menu_bar_icon'>
+                <div class = menu_bar></div>
+                <div class = menu_bar></div>
+                <div class = menu_bar></div>
+
+            </div>
+            
+            <div class = centered_div>
+                <h1 class = "page_header"> Sources </h1>
+            </div>
+        </section>
+
+        <p>
+            <h2>Information Sources</h2>
+            https://en.wikipedia.org/wiki/Croissant
+
+            https://bakingamoment.com/easy-homemade-croissant-recipe/
+
+            https://ahedgehoginthekitchen.com/perfect-croissant/
+
+            https://www.bakersmaison.com.au/latest-news/blog/the-history-of-the-croissant
+
+
+            <h2>Photo Sources</h2>
+
+            https://www.thespruceeats.com/thmb/b8bant4N4NVcbCp181SEjnscCFM=/2121x1193/smart/filters:no_upscale()/GettyImages-86088372-58174bb25f9b581c0b0e6f50.jpg
+            https://www.roadtopastry.com/blog/wp-content/uploads/croissant-dough-shaped.jpg
+            https://static.onecms.io/wp-content/uploads/sites/9/2020/08/21/all-butter-croissant-dough-FT-RECIPE0920.jpg
+            https://article.innovadatabase.com/articleimgs/article_images/637304890424902023Bread-and-buns-496564915_5472x3648.jpeg
+            https://assets.puzzlefactory.pl/puzzle/302/938/original.jpg
+            https://www.christinascucina.com/wp-content/uploads/2020/07/fullsizeoutput_d796-e1595778001227.jpeg
+            https://i.pinimg.com/originals/69/a2/f0/69a2f036e6c6002bcb2392610c736361.jpg
+            https://blog.amigofoods.com/wp-content/uploads/2019/07/medialunas-argentine-dessert.jpg
+            https://www.mniammniam.com/obrazki_mobile/rogale_marcinskie1_mobile.jpg
+            https://www.mangiabedda.com/wp-content/uploads/2016/09/brioche-2.jpg
+            https://chileanfoodandgarden.com/wp-content/uploads/2019/04/medialunas-argentinas-33.jpg
+            https://www.bakingbusiness.com/ext/resources/2019/8/08192019/GlobalTrends.jpg?1566494557
+            https://img1.mashed.com/img/gallery/the-best-bakery-in-every-state/intro-1601499029.jpg
+            https://www.foodiewithfamily.com/wp-content/uploads/2020/04/How-to-make-croissants-2-680x453.jpg
+            https://www.sweetandsavorybyshinee.com/wp-content/uploads/2014/05/Homemade-Croissants-From-Scratch-2-500x375.jpg
+            https://giadzy.com/wp-content/uploads/thumbnails/20180905_201140_10358_7629-770x435.jpeg
+            https://img.delicious.com.au/RzgR3kXD/w1200/del/2015/12/cornetti-italian-croissants-24713-1.jpg
+            https://www.theflavorbender.com/wp-content/uploads/2020/05/French-Croissants-SM-2363.jpg
+            https://media.tacdn.com/media/attractions-splice-spp-674x446/06/ef/70/6b.jpg
+        </p>
+
+
+    <section id = variants_section_3>
+        <div>
+            <a href = "./index.html">
+                <div class = columns_2>
+                    <img src = ./assets/bakery_2.jpg class = navigation_pictures alt = "picture of croissant">
+                    <div class = navigation_text>Home</div>
+                    
+                </div>
+            </a>
+            <a href = "./history.html">
+                <div class = columns_2>
+                    <img src = ./assets/history.jpeg class = navigation_pictures alt = "picture of croissant">
+                    <div class = navigation_text>History</div>
+                    
+                </div>
+            </a>
+            
+            <a href = "./baking.html">
+                <div class = columns_2>
+                    <img src = ./assets/baking.jpg class = navigation_pictures alt = "picture of croissant">
+                    <div class = navigation_text>Baking</div>
+                </div>
+            </a>
+            
+            <a href = 'production.html'>
+                <div class = columns_2>
+                    <img src = ./assets/production.jpg class = navigation_pictures alt = "picture of croissant">
+                    <div class = navigation_text>Production</div>
+                </div>
+            </a>
+            </div>
+
+            <a href = 'ingredients.html'>
+                <div class = columns_2>
+                    <img src = ./assets/ingredients.jpg class = navigation_pictures alt = "picture of croissant">
+                    <div class = navigation_text>Ingredients</div>
+
+                </div>
+            </a>
+            
+            <a href = "variants.html">
+                <div class = columns_2>
+                    <img src = ./assets/variants.jpg class = navigation_pictures alt = "picture of croissant">
+                    <div class = navigation_text>Variants</div>
+                </div> 
+            </a>
+           
+        </div> 
+        </section>     
+
+    </body>
+
+</html>
+
+<script>
+    var showing_menu = false;
+    document.getElementById('menu_bar_icon').addEventListener("click", show_menu, false)
+
+    function show_menu() {
+        console.log(showing_menu)
+        if (showing_menu==false) {
+            document.getElementById('menu_bar_icon').innerHTML +=
+                "<div id = navigation_popup> <ul> <a href = ./index.html><li>Home</li></a> <a href = ./history.html><li>History</li></a> <a href = ./Production.html><li>Production</li></a> <a href = ./baking.html><li>Baking</li></a> <a href = ./ingredients.html><li>Ingredients</li></a> <a href = ./variants.html><li>Variants</li></a> <a href = ./sources.html><li>Sources</li> </ul> </div>  "
+            showing_menu = true    
+        }
+        else {
+            document.getElementById('navigation_popup').remove()
+            showing_menu = false
+        }
+        
+    }
+</script>

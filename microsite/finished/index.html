@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Croissant Homepage</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="./microsite_css.css">
+    </head>
+    <body>
+        <section class = "page_banner">
+            <div>
+                <div class = menu_bar_container id = 'menu_bar_icon'>
+                    <div class = menu_bar></div>
+                    <div class = menu_bar></div>
+                    <div class = menu_bar></div>
+                </div>
+                <div class = centered_div>
+                    <h1 class = "page_header"> Croissant </h1>
+                </div>
+            </div>
+        </section>
+
+        <section id = section_two>
+        <div>
+            <div class = columns_1> 
+                <p class = quote_text id = column_one_text_one>
+                    “A beautiful, perfect croissant is <span class = text_highlight >puffy</span> because it is “feuilleté”. This means that the dough has been folded over and over again to create perfect <span class = text_highlight >buttery</span> layers with air in between.”
+                </p>
+
+                <p class= quote_text id = column_one_text_two> 
+                    “One pastry however is the ultimate <span class = text_highlight >indulgence</span>. Hand-made with <span class = text_highlight >pure butter</span> and a feast for the eyes”
+                </p>
+            </div>
+
+            <div class = columns_1>
+                <img src= .\assets\French-Croissants-SM-2363.jpg alt = "Photo of a croissnat" id = mainpage_picture>
+            </div>
+
+            <div class = columns_1>
+                <p class =quote_text id = column_three_text_one>
+                    “Biting into it should result in a mess of crumbs all over your shirt! This is due to the perfect <span class = text_highlight >flakiness</span> of the croissant. Again, croissants should be <span class = text_highlight >full of life!</span> The layers and all the butter result in a flaky combination”
+                </p>
+            </div>
+        </div>
+        </section>
+        <section id = section_3>
+        <div>
+            <a href = "./index.html">
+                <div class = columns_2>
+                    <img src = ./assets/bakery_2.jpg class = navigation_pictures alt = "picture of croissant">
+                    <div class = navigation_text>Home</div>
+                    
+                </div>
+            </a>
+            <a href = "./history.html">
+                <div class = columns_2>
+                    <img src = ./assets/history.jpeg class = navigation_pictures alt = "picture of croissant">
+                    <div class = navigation_text>History</div>
+                    
+                </div>
+            </a>
+            
+            <a href = "./baking.html">
+                <div class = columns_2>
+                    <img src = ./assets/baking.jpg class = navigation_pictures alt = "picture of croissant">
+                    <div class = navigation_text>Baking</div>
+                </div>
+            </a>
+            <a href = 'production.html'>
+                <div class = columns_2>
+                    <img src = ./assets/production.jpg class = navigation_pictures alt = "picture of croissant">
+                    <div class = navigation_text>Production</div>
+                </div>
+            </a>
+            <a href = 'ingredients.html'>
+                <div class = columns_2>
+                    <img src = ./assets/ingredients.jpg class = navigation_pictures alt = "picture of croissant">
+                    <div class = navigation_text>Ingredients</div>
+
+                </div>
+            </a>
+            <a href = "variants.html">
+                <div class = columns_2>
+                    <img src = ./assets/variants.jpg class = navigation_pictures alt = "picture of croissant">
+                    <div class = navigation_text>Variants</div>
+                </div> 
+            </a>
+           
+        </div> 
+        </section> 
+    </body>
+</html>
+
+<script>
+    var showing_menu = false;
+    document.getElementById('menu_bar_icon').addEventListener("click", show_menu, false)
+
+    function show_menu() {
+        console.log(showing_menu)
+        if (showing_menu==false) {
+            document.getElementById('menu_bar_icon').innerHTML +=
+            "<div id = navigation_popup> <ul> <a href = ./index.html><li>Home</li></a> <a href = ./history.html><li>History</li></a> <a href = ./Production.html><li>Production</li></a> <a href = ./baking.html><li>Baking</li></a> <a href = ./ingredients.html><li>Ingredients</li></a> <a href = ./variants.html><li>Variants</li></a> <a href = ./sources.html><li>Sources</li> </ul> </div>  "
+            showing_menu = true    
+        }
+        else {
+            document.getElementById('navigation_popup').remove()
+            showing_menu = false
+        }
+        
+    }
+</script>
